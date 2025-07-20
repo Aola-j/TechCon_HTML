@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>TechCon Website</title>
+        <style>
+            nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #5e99ec;
+        }
+
+        nav li {
+            float: inline-start;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #111;
+        }
+        .foot {
+            background-color:#5e99ec
+        }
+        .foot {
+            padding: 14px 16px;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p>Email Address:<a href="mailto:olaabe@mail.com">olaabe@mail.com</a></p>
+            <p>Social Media Links:<a href="https://pixabay.com/photos/search/speaking/" target="_blank">GitHub</a></p>
+            <div style="width: 50%">
+                <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.mapsdirections.info/fr/calculer-la-population-sur-une-carte">Calculateur de carte de population</a>
+                </iframe>
+            </div>
+            <form action="/submit-form" method="post">
+                 <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Name">
+
+            <p></p><label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+            <p></p><label for="message">Message:</label>
+            <input type="text" id="message" name="message" required placeholder="Message">
+
+            <p></p><button type="submit">Send Message</button>
+            </form>
+        </main>
+    </body>
+    </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>TechCon Website</title>
+        <style>
+            nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #5e99ec;
+        }
+
+        nav li {
+            float: inline-start;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #111;
+        }
+        .foot {
+            background-color:#5e99ec
+        }
+        .foot {
+            padding: 14px 16px;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Register for TechCon 2024</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="/submit-form" method="post">
+                <label for="username">Username (4-8 characters):</label>
+            <input type="text" id="username" name="username" required minlenght="4" maxlength="8" placeholder="Username">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+            <label for="password">Password (6-8 characters)</label>
+            <input type="password" id="password" name="password" required minlength="6" maxlength="8" placeholder="Password">
+
+            <label for="age">AGE:</label>
+            <input type="number" id="age" name="age" min="18" max="80" placeholder="Age">
+
+            <label for="terms and conditions">Terms and Condition:</label>
+            <input type="checkbox" id="terms of service" name="terms of service" required placeholder="user must check to proceed">
+
+            <button type="submit">Register Now</button>
+            </form>
+        </main>
+        <footer>
+            <p class="foot">&copy; 2024 TechCon Conference</p>
+            <p>copyright</p>
+        </footer>
+    </body>
+    </html>
